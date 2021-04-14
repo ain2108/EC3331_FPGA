@@ -33,7 +33,27 @@ In this tutorial I'll execute gtkwave from the command line.
 
 ## Basic Simulation
 
-
-
+1. Compiling the Verilog Source Code 
+```bash
+iverilog -o sim counter_tb.v counter.v
+```
+2. Running the Simulation
+```bash
+vvp sim -lxt2
+```
+3. Type "finish" to finish the simulation. 
+```
+LXT2 info: dumpfile counter_tb.vcd opened for output.
+** VVP Stop(0) **
+** Flushing output streams.
+** Current simulation time is 168 ticks.
+> finish
+```
+4. The output of the simulation is a waveform file. Open it using `gtkwave`!
+```bash
+./gtkwave.app/Contents/Resources/bin/gtkwave counter_tb.vcd 
+```
+5. Observe the simulation :) 
+![Image of Simulation](sim.png)
 
 

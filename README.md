@@ -22,12 +22,14 @@ https://iverilog.fandom.com/wiki/Installation_Guide
 ### GTKWave
 
 Now that we have the simulator, we also need something to view our waveforms with. 
-A free tool that I used is GTKWave. To install it on MacOS, just downlaod the zip directly and unzip:
+A free tool that I used is GTKWave. To install it on MacOS, just downlaod the zip directly:
 ```bash
 curl http://gtkwave.sourceforge.net/gtkwave.zip --output gtkwave.zip
+```
+Unzip it:
+```bash
 unzip gtkwave.zip
 ```
-
 You can then copy gtkwave into your Applications folder for easy access, or anywhere else for that matter.
 In this tutorial I'll execute gtkwave from the command line.
 
